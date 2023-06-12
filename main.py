@@ -34,7 +34,7 @@ with tab1:
     u = np.ones_like(t)  # 단위계단입력 생성
 
     # 응답곡선 계산
-    t, y = signal.step((Hnum, Hden), T=t)
+    t, y = signal.step((Gnum, Gden), T=t)
 
     # 응답곡선 그래프 그리기
     plt.plot(t, y)
